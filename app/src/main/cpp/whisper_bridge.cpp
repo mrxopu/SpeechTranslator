@@ -41,7 +41,7 @@ std::string whisper_bridge_transcribe(const float* pcm, int n_samples, const cha
     wp.print_progress         = false;
     wp.print_timestamps       = false;
     wp.suppress_blank         = true;
-    // ✅ REMOVED: suppress_non_speech_tokens — not in this whisper.cpp version
+    
     wp.n_threads              = g_threads;
     wp.audio_ctx              = 0;
 
