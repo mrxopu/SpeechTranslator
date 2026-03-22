@@ -67,7 +67,6 @@ void llama_bridge_translate(const std::string& prompt,
     if (n <= 0) { LOGE("Tokenization failed"); return; }
     toks.resize(n);
 
-    // ✅ REMOVED: llama_kv_cache_clear — not in this version, safe to skip
     
     // Prefill
     llama_batch batch = llama_batch_get_one(toks.data(), n);
