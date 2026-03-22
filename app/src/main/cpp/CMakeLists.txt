@@ -6,7 +6,7 @@ if(ANDROID)
     add_link_options(-Wl,-z,max-page-size=16384)
 endif()
 
-# ── Dimensity 9400 / Cortex-X925 ARM feature flags ───────────────────────────
+# ── Dimensity 9500 / Cortex-X925 ARM feature flags ───────────────────────────
 if(ANDROID_ABI STREQUAL "arm64-v8a")
     # Enable SME2, BF16, and i8mm
     set(ARM_FLAGS "-march=armv9.2-a+sme2+i8mm+bf16+dotprod")
